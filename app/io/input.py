@@ -20,6 +20,6 @@ def read_with_pandas():
     Функція для зчитування з файлу за допомогою бібліотеки pandas.
     """
     import pandas as pd
-    data = pd.read_csv('data/input_file.txt')
+    data = pd.read_csv('data/input_file_pandas.txt')
     text = data.to_string(index=False, header=False)
     return text

@@ -13,9 +13,9 @@ def main():
     output.console_output(text_from_file)
     output.console_output(text_with_pandas)
 
-    output.write_to_file(text_from_console)
+    output.console_output(text_from_console)
     output.write_to_file(text_from_file)
-    output.write_to_file(text_with_pandas)
+    output.write_to_file_with_pandas(text_with_pandas)
 
 
 if __name__ == "__main__":

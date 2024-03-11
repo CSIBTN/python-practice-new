@@ -1,5 +1,7 @@
 import unittest
-from io import input
+import sys
+sys.path.append("C:\\Users\\ichig\\Desktop\\Learning\\Python\\New Project") # Треба змінити шлях
+from app.io import input
 
 
 class TestInputFunctions(unittest.TestCase):
@@ -11,7 +13,9 @@ class TestInputFunctions(unittest.TestCase):
         self.assertEqual(actual_output, expected_output)
 
     def test_read_with_pandas(self):
-        expected_output = "Text from pandas"
+        expected_output = """Empty DataFrame
+Columns: [Text from pandas]
+Index: []"""
         actual_output = input.read_with_pandas()
         self.assertEqual(actual_output.strip(), expected_output)
 
